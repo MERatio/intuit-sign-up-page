@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Intuit Sign Up Page</title>
   </head>
@@ -10,10 +14,12 @@
     <!-- Top -->
     <div class="top">
       <div>
-        <p>Already have an Intuit account?</p>
-        <a href="#">I forgot my User ID or Password</a>
+        <p class="dark-3">Already have an Intuit account?</p>
+        <a href="#" class="blue-link">I forgot my User ID or Password</a>
       </div>
-      <button class="sign-in-btn">Sign in</button>
+      <button class="sign-in-btn">
+        <i class="fas fa-lock"></i>&nbsp;&nbsp;&nbsp;Sign In
+      </button>
     </div>
     <!-- Header -->
     <header class="header">
@@ -42,56 +48,81 @@
     <!-- Sign up container -->
     <section class="sign-up-container">
       <header>
-        <h2>Create an Intuit account</h2>
+        <h1>Create an Intuit account</h1>
         <div>
           <p>One account for everything Intuit, including Mint.</p>
-          <a href="#">Learn more</a>
+          <a href="#" class="blue-link">Learn more</a>
         </div>
       </header>
       <!-- Sign up form -->
       <form class="sign-up-form">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" maxlength="100" required />
-        <label for="phone">Phone (recommended)</label>
-        <input type="tel" name="phone" id="phone" maxlength="30" required />
-        <p class="phone-warning">
-          Standard call, messaging or data rates may apply.
-        </p>
-        <label for="password">Password</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          maxlength="50"
-          required
-        />
-        <button name="sign-up">Create Account</button>
+        <fieldset>
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            maxlength="100"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <label for="phone">Phone (recommended)</label>
+          <input type="tel" name="phone" id="phone" maxlength="30" required />
+          <p class="phone-warning">
+            Standard call, messaging or data rates may apply.
+          </p>
+        </fieldset>
+        <fieldset>
+          <label for="password">Password</label>
+          <div class="password-input-container">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              maxlength="50"
+              required
+            />
+            <i class="fas fa-unlock"></i>
+          </div>
+        </fieldset>
+        <button name="create-account" class="sign-up-btn">
+          <i class="fas fa-lock"></i>&nbsp;&nbsp;Create Account
+        </button>
       </form>
       <footer>
         <p>
-          By clicking Create account, you agree to our <a href="#">Terms</a> and
-          have read and acknowledge our <a href="#">Privacy Statement</a>.
+          <small class="sign-up-tos">
+            By clicking Create account, you agree to our<br />
+            <a href="#" class="blue-link">Terms</a> and have read and
+            acknowledge our <a href="#" class="blue-link">Privacy Statement</a>.
+          </small>
         </p>
       </footer>
       <div class="capcha-tos-container">
         <p>
-          Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and
-          <a href="#">Terms of Use</a>.
+          <small class="capcha-tos">
+            Invisible reCAPTCHA by Google
+            <a href="#" class="blue-link">Privacy Policy</a> and
+            <a href="#" class="blue-link">Terms of Use</a>.
+          </small>
         </p>
       </div>
     </section>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer dark-3">
       <div class="footer-links-container">
         <ul class="footer-links">
-          <li class="footer-link"><a href="#">Legal</a></li>
-          <li class="footer-link"><a href="#">Privacy</a></li>
-          <li class="footer-link"><a href="#">Security</a></li>
+          <li class="footer-link"><a href="#" class="blue-link">Legal</a></li>
+          <li class="footer-link"><a href="#" class="blue-link">Privacy</a></li>
+          <li class="footer-link">
+            <a href="#" class="blue-link">Security</a>
+          </li>
         </ul>
       </div>
       <div class="copyright-container">
-        <p class="copyright">
-          <small>
+        <p>
+          <small class="copyright">
             &copy; 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks,
             QB, TurboTax, ProConnect and Mint are registered trademarks of
             Intuit Inc. <br />Terms and conditions, features, support, pricing,
