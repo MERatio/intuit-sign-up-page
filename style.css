@@ -86,11 +86,14 @@ body {
   line-height: 0.7;
 }
 
+.icon:not(:last-child) {
+  margin-right: 0.6rem;
+}
+
 .icon-text {
   font-size: 1.9rem;
   text-decoration: none;
   color: var(--dark-4);
-  margin-right: 0.6rem;
 }
 
 /* Sign up container */
